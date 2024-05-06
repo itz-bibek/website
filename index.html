@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Bibek</span></h1>
+                <h3>I'm a <span class="type-text"></span></h3>
+            </div>
+        </div>
+    </div>
+<!-------------------About--------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Photo.JPG">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"><span>About Me</span></h1>
+                    <p>A passionate learner diving into the world of <span>Web Development</span> and <span>UI/UX Designing</span>. My journey into the digital realm strems from a profound interest in the limitless possibilities of the digital world and the ever-evolving landscape of computers.</p>
+<!----------------------About[Skills and Experience]-------------->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Web Development</p>
+                        <p class="tab-links" onclick="opentab('experience')">UI/UX Designing</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web Development encompasses the creation and maintenance of websites and web applications, involving frontend, backend and full-stack development.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents"id="experience">
+                        <ul>
+                            <li><span>UI/UX Designing</span><br>UI/UX design focuses on creating visually appealing and user-friendly interfaces for websites and applications, ensuring an intuitive and engaging user experience.</li>
+                        </ul>
+                    </div>
+<!-------------------------------------------skills end------------------------->
+                </div>
+            </div>
+        </div>
+    </div>
+<!--------------------------Service--------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"><span>My Skills</span></h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>I am currently honing my skills in web development. I have a growing proficiency in designing websites and creating new ones. While I may Be in the early stages of my career, I am eager to learn and contribute to web development projects with enthusiasm and dedication.</p>
+                <a href="https://en.wikipedia.org/wiki/Web_development">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Designing</h2>
+                <p>I'm new to UI/UX Designing but eager to learn and contribute. With a passion for intuitive interfaces, I'm excited to grow in this dynamic field and collaborate on inovative projects.</p>
+                <a href="https://en.m.wikipedia.org/wiki/User_experience_design">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------------------contact------------------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i> bibekroy2807@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://twitter.com/BibekRo52821508"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/roy-bibek"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Feedback"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2024 Bibek. All rights reserved</p>
+    </div>
+</div>
+<!--------------Icon Font---------->
+<script src="https://kit.fontawesome.com/3388bbed89.js" crossorigin="anonymous"></script>
+
+<!--------------typed js--------------->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<!------------------Connect JS page---------------------->
+<script src="main.js"></script>
+
+</body>
+</html>
